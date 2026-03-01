@@ -2,6 +2,7 @@
 This project is an Advanced SQL Data Analysis Case Study focused on Healthcare Performance and Efficiency. It cleans, integrates, and analyzes data using 30+ analytical queries to quantify KPIs like Patient Refusal Rate, Staff Presence, and service-level Morale correlations for operational optimization.
 
 • Problem Statement
+
 	– Hospitals collect large volumes of data related to patients, services, and staff.
 	
 	– However, raw hospital data often contains:
@@ -23,56 +24,56 @@ This project is an Advanced SQL Data Analysis Case Study focused on Healthcare P
 		▪ Service performance improvement
 
 • Project Workflow
-	– Data Cleaning & Preparation:
-		▪ Removed duplicate patient records using DISTINCT
-		▪ Converted arrival and departure dates into proper DATE format
-		▪ Handled missing satisfaction values by replacing them with 0
-		▪ Calculated patient length of stay (stay days)
-		▪ Created cleaned production table tbl_patients
 	
-• Exploratory Analysis
-	– Total patients per service
-	– Patient age distribution (Children / Adults / Seniors)
-	– Minimum & maximum length of stay
-	– Overall and service-wise patient satisfaction
-	– Monthly and weekly patient demand
+	• Data Cleaning & Preparation
+		– Removed duplicate patient records using DISTINCT
+		– Converted arrival and departure dates into proper DATE format
+		– Handled missing satisfaction values by replacing them with 0
+		– Calculated patient length of stay (staydays)
+		– Created cleaned production table tbl_patients
 
-• Service Demand & Bed Utilization:
-	– Compared:
-		▪ Patients requested
-		▪ Patients admitted
-		▪ Available beds
+	• Exploratory Analysis
+		– Total patients per service
+		– Patient age distribution (Children / Adults / Seniors)
+		– Minimum & maximum length of stay
+		– Overall and service-wise patient satisfaction
+		– Monthly and weekly patient demand
 
-	– Calculated:
-		▪ Bed utilization ratios
-		▪ Admission-to-bed ratios
-		▪ Demand vs capacity gaps
+	• Service Demand & Bed Utilization
+		– Compared:
+			▪ Patients requested
+			▪ Patients admitted
+			▪ Available beds
+		– Calculated:
+			▪ Bed utilization ratios
+			▪ Admission-to-bed ratios
+			▪ Demand vs capacity gaps
+		– Identified:
+			▪ Overcrowded weeks
+			▪ Peak demand weeks per service
+			▪ Services with high refusal rates
+			
+	• Staff Performance & Attendance
+		– Counted staff by role and service
+		– Calculated staff attendance percentages
+		– Identified:
+			▪ Staff with attendance below 70%
+			▪ Doctors with lowest attendance
+			▪ Most absent staff members
+		– Analyzed staff presence during critical weeks
 
-	– Identified:
-		▪ Overcrowded weeks
-		▪ Peak demand weeks per service
-		▪ Services with high refusal rates
-		
-• Staff Performance & Attendance
-	– Counted staff by role and service
-	– Calculated staff attendance percentages
-	– Analyzed staff presence during critical weeks
-	– Identified:
-		▪ Staff with attendance below 70%
-		▪ Doctors with lowest attendance
-		▪ Most absent staff members
-
-• Advanced SQL Techniques
-	– Used:
-		▪ JOIN for cross-table analysis
-		▪ CTE (WITH clause) for understaffing detection
-		▪ WINDOW FUNCTIONS for:
-		• Running totals
-		• Ranking busiest weeks
-		• Ranking staff attendance
-		▪ Built business logic using CASE WHEN
+	• Advanced SQL Techniques
+		– Used:
+			▪ JOIN for cross-table analysis
+			▪ CTE (WITH clause) for understaffing detection
+			▪ WINDOW FUNCTIONS for:
+			• Running totals
+			• Ranking busiest weeks
+			• Ranking staff attendance
+			▪ Built business logic using CASE WHEN
 	
 • Major Insights
+
 	• Service Demand is Uneven
 		– Some services consistently receive more patient requests than others.
 		– Insight:
