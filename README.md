@@ -95,7 +95,6 @@ Project Workflow:
 			▪ Low attendance increases workload on remaining staff and may reduce service quality.
 
 	•High Demand ≠ High Satisfaction
-
 		– Some services with high patient load still show low average satisfaction.
 		– Insight:
 			▪ High workload without proportional staffing leads to reduced patient experience.
